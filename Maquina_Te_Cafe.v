@@ -30,8 +30,8 @@ module tea_and_coffee_machine(
   begin
     if(rst == 1)
       begin
-        estado_actual = 0;
-        estado_siguiente = 0;
+        estado_actual = 000;
+        estado_siguiente = 000;
         in = 0;
         BCafe = 0;
         BTe = 0;
@@ -48,12 +48,7 @@ module tea_and_coffee_machine(
           begin
             estado_siguiente = EBoton;
           end
-
-        //EBoton: case(director)
-
-        begin
-
-        EBoton : if(in == )
+        EBoton : if(director[4:3] == 2'b00 )
           begin
             //Si no entra moneda
           end
